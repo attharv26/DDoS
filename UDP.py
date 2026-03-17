@@ -7,4 +7,4 @@ for i in range (0,load):
     ip_packet = IP(src=src_ip, dst=target)
     udp_packet = UDP(sport=random.randint(1024, 65535), dport=53)
     packet = ip_packet / udp_packet
-    send(packet, verbose=True, monitor=True)
+    send(packet, verbose=True)
